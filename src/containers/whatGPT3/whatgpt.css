@@ -1,0 +1,122 @@
+.whatGpt3 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(117, 75, 117, 1) 0%,
+    rgba(74, 74, 153, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(117, 75, 117, 1) 0%,
+    rgba(74, 74, 153, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(117, 75, 117, 1) 0%,
+    rgba(74, 74, 153, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4A4A99', endColorstr='#754B75', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(117, 75, 117, 1) 0%,
+    rgba(74, 74, 153, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(117, 75, 117, 1) 0%,
+    rgba(74, 74, 153, 1) 100%
+  );
+}
+
+.whatGpt3Feature {
+  display: flex;
+}
+
+.whatGpt3Feature .gptFeaturesContainerFeature {
+  margin: 0;
+}
+.whatGpt3Feature .gptFeaturesContainerFeatureText {
+  max-width: 700px;
+}
+
+.whatGpt3Heading {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin: 4rem 0 2rem;
+  position: relative;
+}
+
+.whatGpt3Heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  max-width: 510px;
+  font-family: var(--font-family);
+}
+
+.whatGpt3Heading p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ff8a71;
+  cursor: pointer;
+  position: absolute;
+  height: fit-content;
+  top: -10rem;
+  bottom: 0;
+  right: 0;
+}
+
+.gpt3Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .whatGpt3Feature .gptFeaturesContainerFeature {
+    flex-direction: column;
+  }
+
+  .whatGpt3Feature .gptFeaturesContainerFeature {
+    margin-top: 0.5rem;
+  }
+
+  .whatGpt3Heading {
+    flex-direction: column;
+  }
+
+  .whatGpt3Heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .gpt3Container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .whatGpt3Heading p {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+  }
+}

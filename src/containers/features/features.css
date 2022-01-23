@@ -1,0 +1,45 @@
+.features {
+  width: 100%;
+  text-align: left;
+  margin-right: 5rem;
+}
+
+.featuresHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+.featuresHeading h1 {
+  flex: 1;
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 34px;
+}
+.featuresHeading p {
+  flex: 0.6;
+  font-family: var(--font-family);
+  font-weight: 800;
+  align-self: baseline;
+  color: #ff8a71;
+  margin-top: 10px;
+}
+
+.featuresContainer {
+  display: flex;
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .featuresHeading {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .featuresContainer {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  .featuresHeading p {
+    margin-top: 1.5rem;
+  }
+}

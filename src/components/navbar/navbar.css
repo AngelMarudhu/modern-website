@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  transition: 0.8s ease-in-out;
+}
+
+.navbarLinks {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+}
+
+.navbarLinksLogo {
+  margin-right: 2rem;
+}
+
+.navbarLinksLogo img {
+  width: 60px;
+  height: 16px;
+}
+
+.navbarLinksContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbarSign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarLinksContainer p,
+.navbarSign p,
+.navbarMenuContainer p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: capitalize;
+
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.navbarSign button,
+.navbarMenuContainer button {
+  padding: 10px 20px;
+  left: 1153px;
+  color: #fff;
+  top: 55px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+
+  background: #ff4820;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbarMenu {
+  margin-left: 1rem;
+
+  display: none;
+  position: relative;
+}
+
+.navbarMenu svg {
+  cursor: pointer;
+}
+
+.navbarMenuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: start;
+  background: var(--color-footer);
+  position: absolute;
+  padding: 20px;
+  top: 40px;
+  right: 0;
+  margin-top: 40px;
+  min-width: 210px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  z-index: 100;
+}
+
+.navbarMenuContainer p {
+  margin: 1rem 0;
+}
+
+.navbarMenuContainerLinksSign {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbarLinksContainer {
+    display: none;
+  }
+  .navbarSign {
+    display: none;
+  }
+  .navbarMenu {
+    display: flex;
+  }
+  .navbarMenuContainerLinksSign {
+    display: block;
+  }
+}
